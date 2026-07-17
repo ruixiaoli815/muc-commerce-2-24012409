@@ -1,0 +1,14 @@
+﻿处理步骤,处理规则,处理前记录数,处理后记录数,影响记录数
+删除完全重复行,删除所有列完全相同的重复记录，保留首次出现,5630,5630,0
+数值缺失值填补: Tenure,使用全局中位数填补（中位数=9.00）,5630,5630,264
+数值缺失值填补: WarehouseToHome,使用全局中位数填补（中位数=14.00）,5630,5630,251
+数值缺失值填补: HourSpendOnApp,使用全局中位数填补（中位数=3.00）,5630,5630,255
+数值缺失值填补: OrderAmountHikeFromlastYear,使用全局中位数填补（中位数=15.00）,5630,5630,265
+数值缺失值填补: CouponUsed,使用全局中位数填补（中位数=1.00）,5630,5630,256
+数值缺失值填补: OrderCount,使用全局中位数填补（中位数=2.00）,5630,5630,258
+数值缺失值填补: DaySinceLastOrder,使用全局中位数填补（中位数=3.00）,5630,5630,307
+类别标准化: PreferredLoginDevice,'Phone' → 'Mobile Phone',5630,5630,1231
+类别标准化: PreferredPaymentMode,'COD' → 'Cash on Delivery',5630,5630,365
+类别标准化: PreferredPaymentMode,'CC' → 'Credit Card',5630,5630,273
+类别标准化: PreferedOrderCat,'Mobile' → 'Mobile Phone',5630,5630,809
+数据类型转换,将 Churn 和 Complain 转换为 int 类型，确保目标变量与二元标志类型一致,5630,5630,5630
